@@ -1,0 +1,128 @@
+﻿
+<h2>Student Record</h2>
+<div class="row">
+    <table id="StudentTable" class="table table-striped table-bordered">
+        <thead>
+            <tr>
+            <th>ID </th>
+            <th>NAME</th>
+            <th>DEPARTMENT</th>
+            <th>SEMESTER</th>
+            <th>AGE</th>
+            <th>FEES</th>
+            <th>ACCIONES</th>
+            </tr>
+        </thead>
+
+    </table>
+</div>
+<body></body>
+    <button id="button" title="Add New Student" type="button" class="btn btn-danger btn-circle btn-xl" onclick="OpenModal()"><i class="fa fa-plus"></i></button>
+
+<!-- Modal -->
+<div class="modal fade" id="FormModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+     <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+               <div class="modal-header bg-dark text-white" >
+                <h5 class="modal-title" id="title">Add New Student</h5>
+                <button type="button" class="close"  data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+               <div class="modal-body">
+                <input id="txtid" type="hidden" value="0" />
+                <form id="formNivel">
+                 <div class="row">
+                  <div class="col-sm-6">
+                  <div class="mb-2">
+                  <label for="txtStudentID" class="form-label">ID Student</label>
+                  <div class="input-group input-group-lg">
+                   <span class="input-group-text" ><i class="bi bi-qr-code"></i></span>
+                   <input type="number" id="txtStudentID" name="StudentID" class="form-control" />
+                  </div>
+                  </div>
+
+                  </div>
+                 <div class="col-sm-6">
+                  <div class="mb-2">
+                  <label for="txtName" class="form-label">Name</label>
+                  <div class="input-group input-group-lg">
+                   <span class="input-group-text" ><i class="bi bi-person-fill"></i></span>
+                   <input type="text" id="txtName" name="Name" class="form-control" />
+                  </div>
+                  </div>
+
+                  </div>
+                   <div class="col-sm-6">
+                  <div class="mb-2">
+                  <label for="txtDepartment" class="form-label">Department</label>
+                  <div class="input-group input-group-lg">
+                   <span class="input-group-text" ><i class="bi bi-building"></i></span>
+                   <input type="text" id="txtDepartment" name="Department" class="form-control" />
+                  </div>
+                  </div>
+
+                  </div>
+                    <div class="col-sm-6">
+                  <div class="mb-2">
+                  <label for="txtSemester" class="form-label">Semester</label>
+                  <div class="input-group input-group-lg">
+                   <span class="input-group-text" ><i class="bi bi-journal-richtext"></i></span>
+                   <input type="text" id="txtSemester" name="Semester" class="form-control" />
+                  </div>
+                  </div>
+
+                  </div>
+                  <div class="col-sm-6">
+                  <div class="mb-2">
+                  <label for="txtAge" class="form-label">Age</label>
+                  <div class="input-group input-group-lg">
+                   <span class="input-group-text" ><i class="bi bi-calendar3"></i></span>
+                   <input type="number" id="txtAge" name="Age" class="form-control" />
+                  </div>
+                  </div>
+
+                  </div>
+                    <div class="col-sm-6">
+                  <div class="mb-2">
+                  <label for="txtFees" class="form-label">Fees</label>
+                  <div class="input-group input-group-lg">
+                   <span class="input-group-text" ><i class="bi bi-cash-coin"></i></span>
+                   <input type="number" id="txtFees" name="Fees" class="form-control" />
+                  </div>
+                  </div>
+
+                  </div>
+                   
+                  </div>
+
+                </form>
+                
+            </div>
+             <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" >Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="Save()">Guardar</button>
+            </div>
+
+          </div>
+    </div>
+</div>
+
+
+
+@section Styles{
+  
+    <link rel="stylesheet" href="~/lib/datatables/css/dataTables.bootstrap4.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Student.css" asp-append-version="true" />
+}
+
+@section Scripts{
+    <script src="~/lib/momentjs/moment.min.js" asp-append-version="true"></script>
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js" asp-append-version="true"></script>
+    <script src="~/lib/datetime-moment/datetime-moment.js" asp-append-version="true"></script>
+    <script src="~/lib/datatables/js/dataTables.bootstrap4.js" asp-append-version="true"></script>
+    <script src="~/js/Student.js" asp-append-version="true"></script>
+
+    <script src="~/lib/datatables-buttons/dataTables.buttons.min.js" asp-append-version="true"></script>
+
+}

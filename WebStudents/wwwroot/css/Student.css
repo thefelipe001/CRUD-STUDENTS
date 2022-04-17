@@ -1,0 +1,84 @@
+﻿#StudentTable {
+    margin-bottom: 60px;
+    width:100%;
+}
+
+.row{
+    margin-bottom:50px;
+}
+
+thead{
+    background-color:red;
+}
+h2{
+    text-align:center;
+    background-color:yellow;
+}
+
+ tbody{
+    background-color:whitesmoke;
+}
+body{
+    background-color:navajowhite;
+}
+
+
+
+
+
+
+
+
+
+h1 {
+    color: green;
+}
+
+.xyz {
+    background-size: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.btn-circle.btn-sm {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    font-size: 8px;
+    text-align: center;
+}
+
+.btn-circle.btn-md {
+    width: 50px;
+    height: 50px;
+    padding: 7px 10px;
+    border-radius: 25px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 12px;
+    text-align: center;
+}
+#button {
+    float: right;
+    background-color: #ff0a0a;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    margin-left: 37%;
+    color:red;
+    font-weight:bolder;
+}
+
+label {
+    font-weight: bolder;
+}
